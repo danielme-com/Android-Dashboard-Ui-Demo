@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/*
+ * Copyright (C) 2012 Daniel Medina <http://danielme.com>
+ * 
+ * This file is part of "Android Dashboard UI Demoo".
+ * 
+ * "Android Dashboard UI Demo" is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3.
+ *
+ * "Android Dashboard UI Demo" is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License version 3
+ * along with this program.  If not, see <http://www.gnu.org/licenses/gpl-3.0.html/>
+ */
+ -->
+<resources>
+
+    <string name="app_name">Dashboard UI</string>
+    <string name="subtitle">danielme.com</string>
+    <string name="button1">Button 1</string>
+    <string name="button2">Button 2</string>   
+    <string name="button3">Button 3</string>   
+    <string name="button4">Button 4</string>   
+    <string name="button5">Button 5</string>   
+    <string name="button6">Button 6</string>   
+
+</resources>
