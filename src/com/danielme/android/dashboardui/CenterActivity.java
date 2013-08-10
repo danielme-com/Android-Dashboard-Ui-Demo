@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 Daniel Medina <http://danielme.com>
+ * Copyright (C) 2012-2013 Daniel Medina <http://danielme.com>
  * 
  * This file is part of "Android Dashboard UI Demo".
  * 
@@ -17,9 +17,9 @@
  */
 package com.danielme.android.dashboardui;
 
-import com.actionbarsherlock.app.ActionBar;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 
 public class CenterActivity extends AbstractDashboardActivity
 {

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 Daniel Medina <http://danielme.com>
+ * Copyright (C) 2012-2013 Daniel Medina <http://danielme.com>
  * 
  * This file is part of "Android Dashboard UI Demo".
  * 

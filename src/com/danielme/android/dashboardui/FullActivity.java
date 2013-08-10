@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 Daniel Medina <http://danielme.com>
+ * Copyright (C) 2012-2013 Daniel Medina <http://danielme.com>
  * 
  * This file is part of "Android Dashboard UI Demo".
  * 
@@ -17,21 +17,18 @@
  */
 package com.danielme.android.dashboardui;
 
-import com.actionbarsherlock.app.ActionBar;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 
 public class FullActivity extends AbstractDashboardActivity
 {
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 	    getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE|ActionBar.DISPLAY_SHOW_HOME|ActionBar.DISPLAY_HOME_AS_UP);
-	
-	}
-	
+	}	
 	
 	@Override
 	protected int getContentView()

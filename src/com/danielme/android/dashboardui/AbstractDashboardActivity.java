@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 Daniel Medina <http://danielme.com>
+ * Copyright (C) 2012-2013 Daniel Medina <http://danielme.com>
  * 
  * This file is part of "Android Dashboard UI Demo".
  * 
@@ -20,22 +20,24 @@ package com.danielme.android.dashboardui;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.MenuItem;
+
 
 
 /**
- * Manages ActionBar (ActionBarSherlock)
+ * Manages ActionBar with ActionBarCompat. You have to import "android-sdk-linux/extras/android/support/v7/appcompat" into Eclipse
+ * as an Android project and add it as a a library.
  * @author Daniel Medina
  *
  */
-public abstract class AbstractDashboardActivity extends SherlockActivity implements ActionBar.OnNavigationListener 
+public abstract class AbstractDashboardActivity extends ActionBarActivity implements ActionBar.OnNavigationListener 
 {
 	
 	public static final int ITEM_HOME = 0;
@@ -51,8 +53,8 @@ public abstract class AbstractDashboardActivity extends SherlockActivity impleme
         setContentView(getContentView());        
 
         Context context = getSupportActionBar().getThemedContext();
-        ArrayAdapter<CharSequence> list = ArrayAdapter.createFromResource(context, R.array.navigation_list, R.layout.sherlock_spinner_item);
-        list.setDropDownViewResource(R.layout.sherlock_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> list = ArrayAdapter.createFromResource(context, R.array.navigation_list, android.R.layout.simple_spinner_item);
+        list.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
