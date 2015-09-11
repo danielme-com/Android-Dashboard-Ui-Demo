@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 
+<!--
 /*
  * Copyright (C) 2012 Daniel Medina <http://danielme.com>
  * 
@@ -17,22 +17,32 @@
  * You should have received a copy of the GNU General Public License version 3
  * along with this program.  If not, see <http://www.gnu.org/licenses/gpl-3.0.html/>
  */
- -->
+-->
 
 <resources>
 
- <style name="dashboard_button">
+    <style name="dashboard_button">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">1</item>      
+        <item name="android:layout_weight">1</item>
         <item name="android:background">@drawable/buttonselector</item>
         <item name="android:padding">5dp</item>
-        <item name="android:drawablePadding">8dp</item> 
+        <item name="android:drawablePadding">8dp</item>
     </style>
-    
-  <style name="dashboard_button_center" parent="@style/dashboard_button">
-        <item name="android:layout_width">wrap_content</item>        
-        <item name="android:layout_weight">0</item>     
+
+    <style name="dashboard_button_center" parent="@style/dashboard_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="dashboard_image_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/buttonselector</item>
+        <item name="android:padding">@dimen/imagebutton_padding</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
     </style>
 
 </resources>

@@ -29,8 +29,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-
-
 /**
  * Manages ActionBar with ActionBarCompat. You have to import "android-sdk-linux/extras/android/support/v7/appcompat" into Eclipse
  * as an Android project and add it as a a library.
@@ -44,6 +42,7 @@ public abstract class AbstractDashboardActivity extends ActionBarActivity implem
 	public static final int ITEM_WIDTH = 1;
 	public static final int ITEM_FULL = 2;
 	public static final int ITEM_CENTER = 3;
+	public static final int GRID = 4;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -90,7 +89,11 @@ public abstract class AbstractDashboardActivity extends ActionBarActivity implem
 		case ITEM_CENTER:
 			if (!(this instanceof CenterActivity))
 				startActivity(new Intent(this, CenterActivity.class));
-			break;		
+			break;
+		case GRID:
+			if (!(this instanceof GridActivity))
+				startActivity(new Intent(this, GridActivity.class));
+			break;	
 		}
     	
       return true;
